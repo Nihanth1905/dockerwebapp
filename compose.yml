@@ -9,6 +9,7 @@ services:
      - db-volumes
    networks:
      - db-net  
+     - app-net  
    #replicas: 2
 
  application:
@@ -19,6 +20,7 @@ services:
      - app-volumes
    networks:
      - app-net  
+     - db-net
    #replicas: 2
    depends_on:
      - "devopsdb"
