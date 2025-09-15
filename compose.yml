@@ -29,6 +29,6 @@ volumes:
   db-volumes:
   app-volumes:
   
-networks:
-  db-net
-  app-net
+#networks:
+#  db-net
+ # app-net
