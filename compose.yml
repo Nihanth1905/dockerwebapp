@@ -7,9 +7,9 @@ services:
      - "3306:3306"
    volumes:
      - db-volumes
-   networks:
-     - db-net  
-     - app-net  
+   #networks:
+    # - db-net  
+     #- app-net  
    #replicas: 2
 
  application:
@@ -18,9 +18,9 @@ services:
      - "1234:8080"
    volumes:
      - app-volumes
-   networks:
-     - app-net  
-     - db-net
+  # networks:
+  #   - app-net  
+ #    - db-net
    #replicas: 2
    depends_on:
      - "devopsdb"
