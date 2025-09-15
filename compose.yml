@@ -2,6 +2,7 @@
 version: "3"
 services:
  devopsdb:
+   container_name: devopsdb
    image: nihanth19/webapp/dbimage
    ports:
      - "3306:3306"
@@ -13,6 +14,7 @@ services:
    #replicas: 2
 
  application:
+   container_name: appcontainer
    image: nihanth19/webapp/appimage
    ports:
      - "1234:8080"
