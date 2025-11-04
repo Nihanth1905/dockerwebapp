@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: cont-1
-          image: nihanth19/webapp:db
+          image: nihanth19/webapps:dbs
           ports:
             - containerPort: 3306
       imagePullSecrets:
